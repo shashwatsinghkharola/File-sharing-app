@@ -1,0 +1,30 @@
+{
+  "name": "file-sharing-app",
+  "version": "1.0.0",
+  "description": "this is file sharing app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "serve": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shashwatsinghkharola/File-sharing-app.git"
+  },
+  "author": "Devs4U",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shashwatsinghkharola/File-sharing-app/issues"
+  },
+  "homepage": "https://github.com/shashwatsinghkharola/File-sharing-app#readme",
+
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "save": "^2.9.0"
+  }
+}
