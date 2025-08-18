@@ -21,16 +21,16 @@ let upload = multer({
 
 router.post('/',(req,res)=>{
     
-    // Store File
+   
     upload(req, res, async (err)=>{
-        // Validate Request
+      
         if(!req.file){
             return res.json({ error : "All fileds are required "});
         }
         if(err){
             return res.status(500).send({error: err.message});
         }
-        // Store into DataBase
+    
         const file = new File({
             filename : req.file.filename,
             uuid: uuid4(),
