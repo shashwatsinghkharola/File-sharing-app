@@ -35,5 +35,6 @@ app.set('view engine', 'ejs');
 app.use('/api/files', require('./routes/files'));
 app.use('/api/auth' , require('./routes/Auth'))
 app.use('/files', require('./routes/show'));
+app.use('/files/downloads', require('./routes/download'));
 
 
